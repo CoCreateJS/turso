@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/CoCreate-app/CoCreate-turso/compare/v1.0.0...v1.1.0) (2026-07-19)
+
+
+### Features
+
+* Update README.md to reflect Turso integration and capabilities ([b1d82ba](https://github.com/CoCreate-app/CoCreate-turso/commit/b1d82bab68cb94a17b13ff0598869f3b8f5d0c0e))
+
 # 1.0.0 (2026-07-18)
 
 
