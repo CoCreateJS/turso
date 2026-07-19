@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/CoCreate-app/CoCreate-turso/compare/v1.1.0...v1.1.1) (2026-07-19)
+
+
+### Bug Fixes
+
+* set default branch to main ([e3233ed](https://github.com/CoCreate-app/CoCreate-turso/commit/e3233ed52e14930edeec71243f5e7f757b579b8d))
+
 # [1.1.0](https://github.com/CoCreate-app/CoCreate-turso/compare/v1.0.0...v1.1.0) (2026-07-19)
 
 
