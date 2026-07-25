@@ -42,7 +42,7 @@
   "type": "module",
   "main": "./src/index.js",
   "dependencies": {
-    "@cocreate/sqlite": "^1.0.0",
-    "@cocreate/utils": "^1.44.0"
+    "@cocreate/sqlite": "^1.2.2",
+    "@cocreate/utils": "^1.44.3"
   }
 }
