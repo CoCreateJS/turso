@@ -50,7 +50,7 @@
     "@cocreate/webpack": "^1.7.0"
   },
   "dependencies": {
-    "@cocreate/sqlite": "^1.3.0",
-    "@cocreate/utils": "^1.46.0"
+    "@cocreate/sqlite": "^1.4.0",
+    "@cocreate/utils": "^1.48.0"
   }
 }
