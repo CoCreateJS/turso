@@ -30,8 +30,21 @@
  */
 import sqlite from "@cocreate/sqlite";
 
+/**
+ * Route a CoCreate CRUD request to the matching database, array, or object operation.
+ *
+ * @public
+ * @environment server
+ */
 export const send = (data) => {
     return sqlite.send(data);
 };
 
 export default { send };
+
+/**
+ * Lightweight Turso CRUD wrapper and multi-tenant state routing client for the CoCreate ecosystem.
+ *
+ * @module turso
+ * @environment server
+ */
