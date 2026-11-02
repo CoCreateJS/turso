@@ -4,7 +4,7 @@ import { createRequire as __WEBPACK_EXTERNAL_createRequire } from "node:module";
 const __WEBPACK_EXTERNAL_createRequire_require = __WEBPACK_EXTERNAL_createRequire(import.meta.url);
 /******/ var __webpack_modules__ = ({
 
-/***/ 7067
+/***/ 1385
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -14,9 +14,9 @@ const __WEBPACK_EXTERNAL_createRequire_require = __WEBPACK_EXTERNAL_createRequir
 /* harmony export */   WL: () => (/* binding */ stmtToHrana),
 /* harmony export */   zB: () => (/* binding */ HranaTransaction)
 /* harmony export */ });
-/* harmony import */ var _libsql_hrana_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6247);
-/* harmony import */ var _libsql_core_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2872);
-/* harmony import */ var _libsql_core_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2454);
+/* harmony import */ var _libsql_hrana_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2470);
+/* harmony import */ var _libsql_core_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9041);
+/* harmony import */ var _libsql_core_util__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8529);
 
 
 
@@ -314,7 +314,7 @@ function mapHranaErrorCode(e) {
 
 /***/ },
 
-/***/ 6475
+/***/ 5944
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -441,7 +441,7 @@ async function waitForLastMigrationJobToFinish({ authToken, baseUrl, }) {
 
 /***/ },
 
-/***/ 49
+/***/ 3340
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -533,21 +533,21 @@ class Lru {
 
 /***/ },
 
-/***/ 4544
+/***/ 1035
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   UU: () => (/* binding */ createClient)
 /* harmony export */ });
 /* unused harmony exports _createClient, WsClient, WsTransaction */
-/* harmony import */ var _libsql_hrana_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6247);
-/* harmony import */ var _libsql_core_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2872);
-/* harmony import */ var _libsql_core_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9448);
-/* harmony import */ var _hrana_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7067);
-/* harmony import */ var _sql_cache_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(49);
-/* harmony import */ var _libsql_core_uri__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6898);
-/* harmony import */ var _libsql_core_util__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(2454);
-/* harmony import */ var _migrations_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(6475);
+/* harmony import */ var _libsql_hrana_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2470);
+/* harmony import */ var _libsql_core_api__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9041);
+/* harmony import */ var _libsql_core_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6299);
+/* harmony import */ var _hrana_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1385);
+/* harmony import */ var _sql_cache_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3340);
+/* harmony import */ var _libsql_core_uri__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8035);
+/* harmony import */ var _libsql_core_util__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8529);
+/* harmony import */ var _migrations_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(5944);
 
 
 
@@ -848,7 +848,7 @@ class WsTransaction extends _hrana_js__WEBPACK_IMPORTED_MODULE_3__/* .HranaTrans
 
 /***/ },
 
-/***/ 2872
+/***/ 9041
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -874,15 +874,15 @@ class LibsqlError extends Error {
 
 /***/ },
 
-/***/ 9448
+/***/ 6299
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   N: () => (/* binding */ expandConfig)
 /* harmony export */ });
-/* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2872);
-/* harmony import */ var _uri_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6898);
-/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2454);
+/* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9041);
+/* harmony import */ var _uri_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8035);
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8529);
 
 
 
@@ -984,14 +984,14 @@ function expandConfig(config, preferHttp) {
 
 /***/ },
 
-/***/ 6898
+/***/ 8035
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   d: () => (/* binding */ encodeBaseUrl),
 /* harmony export */   w: () => (/* binding */ parseUri)
 /* harmony export */ });
-/* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2872);
+/* harmony import */ var _api_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9041);
 // URI parser based on RFC 3986
 // We can't use the standard `URL` object, because we want to support relative `file:` URLs like
 // `file:relative/path/database.db`, which are not correct according to RFC 8089, which standardizes the
@@ -1116,14 +1116,14 @@ function encodeUserinfo(userinfo) {
 
 /***/ },
 
-/***/ 2454
+/***/ 8529
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   G9: () => (/* binding */ ResultSetImpl),
 /* harmony export */   UQ: () => (/* binding */ transactionModeToBegin)
 /* harmony export */ });
-/* harmony import */ var js_base64__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5152);
+/* harmony import */ var js_base64__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1843);
 
 const supportedUrlLink = "https://github.com/libsql/libsql-client-ts#supported-urls";
 function transactionModeToBegin(mode) {
@@ -1187,7 +1187,7 @@ function valueToJson(value) {
 
 /***/ },
 
-/***/ 6779
+/***/ 3818
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1195,10 +1195,10 @@ function valueToJson(value) {
 /* harmony export */   lP: () => (/* binding */ Batch)
 /* harmony export */ });
 /* unused harmony export BatchStep */
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8080);
-/* harmony import */ var _result_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7478);
-/* harmony import */ var _stmt_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5837);
-/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2887);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5627);
+/* harmony import */ var _result_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3569);
+/* harmony import */ var _stmt_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9002);
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8376);
 
 
 
@@ -1474,7 +1474,7 @@ function checkCondBatch(expectedBatch, cond) {
 
 /***/ },
 
-/***/ 3493
+/***/ 6018
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1529,7 +1529,7 @@ class ByteQueue {
 
 /***/ },
 
-/***/ 9616
+/***/ 5263
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1552,7 +1552,7 @@ class Client {
 
 /***/ },
 
-/***/ 9417
+/***/ 5790
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1564,7 +1564,7 @@ class Cursor {
 
 /***/ },
 
-/***/ 7062
+/***/ 1437
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1582,7 +1582,7 @@ function describeResultFromProto(result) {
 
 /***/ },
 
-/***/ 3809
+/***/ 5618
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1591,10 +1591,10 @@ function describeResultFromProto(result) {
 /* harmony export */   op: () => (/* reexport safe */ _json_decode_js__WEBPACK_IMPORTED_MODULE_0__.op),
 /* harmony export */   s_: () => (/* reexport safe */ _protobuf_encode_js__WEBPACK_IMPORTED_MODULE_3__.s)
 /* harmony export */ });
-/* harmony import */ var _json_decode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2520);
-/* harmony import */ var _json_encode_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9888);
-/* harmony import */ var _protobuf_decode_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8599);
-/* harmony import */ var _protobuf_encode_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6899);
+/* harmony import */ var _json_decode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8299);
+/* harmony import */ var _json_encode_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7143);
+/* harmony import */ var _protobuf_decode_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7780);
+/* harmony import */ var _protobuf_encode_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1068);
 
 
 
@@ -1603,7 +1603,7 @@ function describeResultFromProto(result) {
 
 /***/ },
 
-/***/ 2520
+/***/ 8299
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1616,7 +1616,7 @@ function describeResultFromProto(result) {
 /* harmony export */   rJ: () => (/* binding */ stringOpt),
 /* harmony export */   zM: () => (/* binding */ boolean)
 /* harmony export */ });
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8080);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5627);
 
 function string(value) {
     if (typeof value === "string") {
@@ -1680,7 +1680,7 @@ function readJsonObject(value, fun) {
 
 /***/ },
 
-/***/ 9888
+/***/ 7143
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -1763,14 +1763,14 @@ function writeJsonObject(value, fun) {
 
 /***/ },
 
-/***/ 8599
+/***/ 7780
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   B: () => (/* binding */ readProtobufMessage)
 /* harmony export */ });
 /* unused harmony export FieldReader */
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8080);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5627);
 
 
 class MessageReader {
@@ -1925,7 +1925,7 @@ function readProtobufMessage(data, def) {
 
 /***/ },
 
-/***/ 6899
+/***/ 1068
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2031,7 +2031,7 @@ function writeProtobufMessage(value, fun) {
 
 /***/ },
 
-/***/ 8080
+/***/ 5627
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -2153,14 +2153,14 @@ class MisuseError extends ClientError {
 
 /***/ },
 
-/***/ 4277
+/***/ 1756
 (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 
 /* unused harmony exports checkEndpoints, HttpClient */
-/* harmony import */ var _libsql_isomorphic_fetch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5481);
-/* harmony import */ var _client_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9616);
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8080);
-/* harmony import */ var _stream_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2402);
+/* harmony import */ var _libsql_isomorphic_fetch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9246);
+/* harmony import */ var _client_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5263);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5627);
+/* harmony import */ var _stream_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6551);
 
 
 
@@ -2289,22 +2289,22 @@ async function findEndpoint(customFetch, clientUrl) {
 
 /***/ },
 
-/***/ 7624
+/***/ 8837
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   h: () => (/* binding */ HttpCursor)
 /* harmony export */ });
-/* harmony import */ var _byte_queue_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3493);
-/* harmony import */ var _cursor_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9417);
-/* harmony import */ var _encoding_json_decode_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2520);
-/* harmony import */ var _encoding_protobuf_decode_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8599);
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(8080);
-/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2887);
-/* harmony import */ var _json_decode_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(3557);
-/* harmony import */ var _protobuf_decode_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(1194);
-/* harmony import */ var _shared_json_decode_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(4392);
-/* harmony import */ var _shared_protobuf_decode_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(9591);
+/* harmony import */ var _byte_queue_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6018);
+/* harmony import */ var _cursor_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5790);
+/* harmony import */ var _encoding_json_decode_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8299);
+/* harmony import */ var _encoding_protobuf_decode_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(7780);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5627);
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(8376);
+/* harmony import */ var _json_decode_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1058);
+/* harmony import */ var _protobuf_decode_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(5293);
+/* harmony import */ var _shared_json_decode_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(6259);
+/* harmony import */ var _shared_protobuf_decode_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(3452);
 
 
 
@@ -2444,16 +2444,16 @@ class HttpCursor extends _cursor_js__WEBPACK_IMPORTED_MODULE_1__/* .Cursor */ .b
 
 /***/ },
 
-/***/ 3557
+/***/ 1058
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   b: () => (/* binding */ PipelineRespBody),
 /* harmony export */   d: () => (/* binding */ CursorRespBody)
 /* harmony export */ });
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8080);
-/* harmony import */ var _encoding_json_decode_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2520);
-/* harmony import */ var _shared_json_decode_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4392);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5627);
+/* harmony import */ var _encoding_json_decode_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8299);
+/* harmony import */ var _shared_json_decode_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6259);
 
 
 
@@ -2520,15 +2520,15 @@ function CursorRespBody(obj) {
 
 /***/ },
 
-/***/ 8253
+/***/ 22
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   B: () => (/* binding */ PipelineReqBody),
 /* harmony export */   L: () => (/* binding */ CursorReqBody)
 /* harmony export */ });
-/* harmony import */ var _shared_json_encode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5408);
-/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2887);
+/* harmony import */ var _shared_json_encode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6591);
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8376);
 
 
 function PipelineReqBody(w, msg) {
@@ -2588,10 +2588,10 @@ function CursorReqBody(w, msg) {
 
 /***/ },
 
-/***/ 1194
+/***/ 5293
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _shared_protobuf_decode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9591);
+/* harmony import */ var _shared_protobuf_decode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3452);
 
 const PipelineRespBody = {
     default() { return { baton: undefined, baseUrl: undefined, results: [] }; },
@@ -2645,15 +2645,15 @@ const CursorRespBody = {
 
 /***/ },
 
-/***/ 8878
+/***/ 7493
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   B: () => (/* binding */ PipelineReqBody),
 /* harmony export */   L: () => (/* binding */ CursorReqBody)
 /* harmony export */ });
-/* harmony import */ var _shared_protobuf_encode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3603);
-/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2887);
+/* harmony import */ var _shared_protobuf_encode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8564);
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8376);
 
 
 function PipelineReqBody(w, msg) {
@@ -2736,27 +2736,27 @@ function CursorReqBody(w, msg) {
 
 /***/ },
 
-/***/ 2402
+/***/ 6551
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   P: () => (/* binding */ HttpStream)
 /* harmony export */ });
-/* harmony import */ var _libsql_isomorphic_fetch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5481);
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8080);
-/* harmony import */ var _encoding_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3809);
-/* harmony import */ var _id_alloc_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5336);
-/* harmony import */ var _queue_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(480);
-/* harmony import */ var _queue_microtask_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3238);
-/* harmony import */ var _result_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(7478);
-/* harmony import */ var _sql_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(2983);
-/* harmony import */ var _stream_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(4147);
-/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(2887);
-/* harmony import */ var _cursor_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(7624);
-/* harmony import */ var _json_encode_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(8253);
-/* harmony import */ var _protobuf_encode_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(8878);
-/* harmony import */ var _json_decode_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(3557);
-/* harmony import */ var _protobuf_decode_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(1194);
+/* harmony import */ var _libsql_isomorphic_fetch__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9246);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5627);
+/* harmony import */ var _encoding_index_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5618);
+/* harmony import */ var _id_alloc_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6971);
+/* harmony import */ var _queue_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9033);
+/* harmony import */ var _queue_microtask_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(9375);
+/* harmony import */ var _result_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(3569);
+/* harmony import */ var _sql_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(6850);
+/* harmony import */ var _stream_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(1124);
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(8376);
+/* harmony import */ var _cursor_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(8837);
+/* harmony import */ var _json_encode_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(22);
+/* harmony import */ var _protobuf_encode_js__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(7493);
+/* harmony import */ var _json_decode_js__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(1058);
+/* harmony import */ var _protobuf_decode_js__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(5293);
 
 
 
@@ -3122,13 +3122,13 @@ async function errorFromResponse(resp) {
 
 /***/ },
 
-/***/ 5336
+/***/ 6971
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   d: () => (/* binding */ IdAlloc)
 /* harmony export */ });
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8080);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5627);
 
 // An allocator of non-negative integer ids.
 //
@@ -3180,7 +3180,7 @@ class IdAlloc {
 
 /***/ },
 
-/***/ 6247
+/***/ 2470
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3199,18 +3199,18 @@ class IdAlloc {
 /* harmony export */ });
 /* unused harmony export openHttp */
 /* unused harmony import specifier */ var HttpClient;
-/* harmony import */ var _libsql_isomorphic_ws__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(440);
-/* harmony import */ var _ws_client_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3547);
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8080);
-/* harmony import */ var _http_client_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4277);
-/* harmony import */ var _libsql_isomorphic_fetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5481);
-/* harmony import */ var _batch_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6779);
-/* harmony import */ var _libsql_url_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(2292);
-/* harmony import */ var _sql_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(2983);
-/* harmony import */ var _stmt_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(5837);
-/* harmony import */ var _stream_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(4147);
-/* harmony import */ var _http_stream_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(2402);
-/* harmony import */ var _ws_stream_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(9096);
+/* harmony import */ var _libsql_isomorphic_ws__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4239);
+/* harmony import */ var _ws_client_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2362);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5627);
+/* harmony import */ var _http_client_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(1756);
+/* harmony import */ var _libsql_isomorphic_fetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9246);
+/* harmony import */ var _batch_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(3818);
+/* harmony import */ var _libsql_url_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(3271);
+/* harmony import */ var _sql_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(6850);
+/* harmony import */ var _stmt_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(9002);
+/* harmony import */ var _stream_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(1124);
+/* harmony import */ var _http_stream_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(6551);
+/* harmony import */ var _ws_stream_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(3813);
 
 
 
@@ -3257,12 +3257,12 @@ function openHttp(url, jwt, customFetch, protocolVersion = 2) {
 
 /***/ },
 
-/***/ 2292
+/***/ 3271
 (__unused_webpack_module, __unused_webpack___webpack_exports__, __webpack_require__) {
 
 /* unused harmony export parseLibsqlUrl */
 /* unused harmony import specifier */ var LibsqlUrlParseError;
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8080);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5627);
 
 ;
 /** Parses a URL compatible with the libsql client (`@libsql/client`). This URL may have the "libsql:" scheme
@@ -3342,7 +3342,7 @@ function parseLibsqlUrl(urlStr) {
 
 /***/ },
 
-/***/ 480
+/***/ 9033
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3378,7 +3378,7 @@ class Queue {
 
 /***/ },
 
-/***/ 3238
+/***/ 9375
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3401,7 +3401,7 @@ else {
 
 /***/ },
 
-/***/ 7478
+/***/ 3569
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3411,8 +3411,8 @@ else {
 /* harmony export */   sR: () => (/* binding */ stmtResultFromProto),
 /* harmony export */   tc: () => (/* binding */ rowsResultFromProto)
 /* harmony export */ });
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8080);
-/* harmony import */ var _value_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(158);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5627);
+/* harmony import */ var _value_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6035);
 
 
 function stmtResultFromProto(result) {
@@ -3465,7 +3465,7 @@ function errorFromProto(error) {
 
 /***/ },
 
-/***/ 4392
+/***/ 6259
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -3476,9 +3476,9 @@ function errorFromProto(error) {
 /* harmony export */   pQ: () => (/* binding */ CursorEntry)
 /* harmony export */ });
 /* unused harmony export Value */
-/* harmony import */ var js_base64__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5152);
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8080);
-/* harmony import */ var _encoding_json_decode_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2520);
+/* harmony import */ var js_base64__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1843);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5627);
+/* harmony import */ var _encoding_json_decode_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8299);
 
 
 
@@ -3589,15 +3589,15 @@ function Value(obj) {
 
 /***/ },
 
-/***/ 5408
+/***/ 6591
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   X: () => (/* binding */ Stmt),
 /* harmony export */   l: () => (/* binding */ Batch)
 /* harmony export */ });
-/* harmony import */ var js_base64__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5152);
-/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2887);
+/* harmony import */ var js_base64__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1843);
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8376);
 
 
 function Stmt(w, msg) {
@@ -3673,7 +3673,7 @@ function Value(w, msg) {
 
 /***/ },
 
-/***/ 9591
+/***/ 3452
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 const Error = {
@@ -3803,14 +3803,14 @@ const Value = {
 
 /***/ },
 
-/***/ 3603
+/***/ 8564
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   X: () => (/* binding */ Stmt),
 /* harmony export */   l: () => (/* binding */ Batch)
 /* harmony export */ });
-/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2887);
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8376);
 
 function Stmt(w, msg) {
     if (msg.sql !== undefined) {
@@ -3900,14 +3900,14 @@ function Empty(_w, _msg) {
 
 /***/ },
 
-/***/ 2983
+/***/ 6850
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   d: () => (/* binding */ Sql),
 /* harmony export */   y: () => (/* binding */ sqlToProto)
 /* harmony export */ });
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8080);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5627);
 
 /** Text of an SQL statement cached on the server. */
 class Sql {
@@ -3958,15 +3958,15 @@ function sqlToProto(owner, sql) {
 
 /***/ },
 
-/***/ 5837
+/***/ 9002
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   O: () => (/* binding */ stmtToProto),
 /* harmony export */   X: () => (/* binding */ Stmt)
 /* harmony export */ });
-/* harmony import */ var _sql_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(2983);
-/* harmony import */ var _value_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(158);
+/* harmony import */ var _sql_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6850);
+/* harmony import */ var _value_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(6035);
 
 
 /** A statement that can be evaluated by the database. Besides the SQL text, it also contains the positional
@@ -4047,17 +4047,17 @@ function stmtToProto(sqlOwner, stmt, wantRows) {
 
 /***/ },
 
-/***/ 4147
+/***/ 1124
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   Z: () => (/* binding */ Stream)
 /* harmony export */ });
-/* harmony import */ var _batch_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6779);
-/* harmony import */ var _describe_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(7062);
-/* harmony import */ var _result_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(7478);
-/* harmony import */ var _sql_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(2983);
-/* harmony import */ var _stmt_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(5837);
+/* harmony import */ var _batch_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3818);
+/* harmony import */ var _describe_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1437);
+/* harmony import */ var _result_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(3569);
+/* harmony import */ var _sql_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6850);
+/* harmony import */ var _stmt_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(9002);
 
 
 
@@ -4119,13 +4119,13 @@ class Stream {
 
 /***/ },
 
-/***/ 2887
+/***/ 8376
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   y: () => (/* binding */ impossible)
 /* harmony export */ });
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8080);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5627);
 
 function impossible(value, message) {
     throw new _errors_js__WEBPACK_IMPORTED_MODULE_0__/* .InternalError */ .Gd(message);
@@ -4134,15 +4134,15 @@ function impossible(value, message) {
 
 /***/ },
 
-/***/ 158
+/***/ 6035
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   G: () => (/* binding */ valueFromProto),
 /* harmony export */   n: () => (/* binding */ valueToProto)
 /* harmony export */ });
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8080);
-/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2887);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5627);
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8376);
 
 
 function valueToProto(value) {
@@ -4230,24 +4230,24 @@ function valueFromProto(value, intMode) {
 
 /***/ },
 
-/***/ 3547
+/***/ 2362
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   I9: () => (/* binding */ WsClient)
 /* harmony export */ });
-/* harmony import */ var _client_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9616);
-/* harmony import */ var _encoding_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3809);
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(8080);
-/* harmony import */ var _id_alloc_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5336);
-/* harmony import */ var _result_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(7478);
-/* harmony import */ var _sql_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(2983);
-/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(2887);
-/* harmony import */ var _stream_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(9096);
-/* harmony import */ var _json_encode_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(8679);
-/* harmony import */ var _protobuf_encode_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(5404);
-/* harmony import */ var _json_decode_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(7051);
-/* harmony import */ var _protobuf_decode_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(6676);
+/* harmony import */ var _client_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5263);
+/* harmony import */ var _encoding_index_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5618);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5627);
+/* harmony import */ var _id_alloc_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(6971);
+/* harmony import */ var _result_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(3569);
+/* harmony import */ var _sql_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(6850);
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(8376);
+/* harmony import */ var _stream_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(3813);
+/* harmony import */ var _json_encode_js__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(8288);
+/* harmony import */ var _protobuf_encode_js__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(1859);
+/* harmony import */ var _json_decode_js__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(3336);
+/* harmony import */ var _protobuf_decode_js__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(4727);
 
 
 
@@ -4575,15 +4575,15 @@ class WsClient extends _client_js__WEBPACK_IMPORTED_MODULE_0__/* .Client */ .K {
 
 /***/ },
 
-/***/ 4970
+/***/ 5295
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   V: () => (/* binding */ WsCursor)
 /* harmony export */ });
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8080);
-/* harmony import */ var _cursor_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9417);
-/* harmony import */ var _queue_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(480);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5627);
+/* harmony import */ var _cursor_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5790);
+/* harmony import */ var _queue_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(9033);
 
 
 
@@ -4668,15 +4668,15 @@ class WsCursor extends _cursor_js__WEBPACK_IMPORTED_MODULE_1__/* .Cursor */ .b {
 
 /***/ },
 
-/***/ 7051
+/***/ 3336
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   V: () => (/* binding */ ServerMsg)
 /* harmony export */ });
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8080);
-/* harmony import */ var _encoding_json_decode_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2520);
-/* harmony import */ var _shared_json_decode_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4392);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5627);
+/* harmony import */ var _encoding_json_decode_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8299);
+/* harmony import */ var _shared_json_decode_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6259);
 
 
 
@@ -4755,14 +4755,14 @@ function Response(obj) {
 
 /***/ },
 
-/***/ 8679
+/***/ 8288
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   l: () => (/* binding */ ClientMsg)
 /* harmony export */ });
-/* harmony import */ var _shared_json_encode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5408);
-/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2887);
+/* harmony import */ var _shared_json_encode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(6591);
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8376);
 
 
 function ClientMsg(w, msg) {
@@ -4844,10 +4844,10 @@ function Request(w, msg) {
 
 /***/ },
 
-/***/ 6676
+/***/ 4727
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _shared_protobuf_decode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(9591);
+/* harmony import */ var _shared_protobuf_decode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3452);
 
 const ServerMsg = {
     default() { return { type: "none" }; },
@@ -4916,14 +4916,14 @@ const GetAutocommitResp = {
 
 /***/ },
 
-/***/ 5404
+/***/ 1859
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   l: () => (/* binding */ ClientMsg)
 /* harmony export */ });
-/* harmony import */ var _shared_protobuf_encode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(3603);
-/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2887);
+/* harmony import */ var _shared_protobuf_encode_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8564);
+/* harmony import */ var _util_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(8376);
 
 
 function ClientMsg(w, msg) {
@@ -5043,16 +5043,16 @@ function GetAutocommitReq(w, msg) {
 
 /***/ },
 
-/***/ 9096
+/***/ 3813
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   P: () => (/* binding */ WsStream)
 /* harmony export */ });
-/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8080);
-/* harmony import */ var _queue_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(480);
-/* harmony import */ var _stream_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(4147);
-/* harmony import */ var _cursor_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(4970);
+/* harmony import */ var _errors_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5627);
+/* harmony import */ var _queue_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9033);
+/* harmony import */ var _stream_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1124);
+/* harmony import */ var _cursor_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5295);
 
 
 
@@ -5268,7 +5268,7 @@ class WsStream extends _stream_js__WEBPACK_IMPORTED_MODULE_2__/* .Stream */ .Z {
 
 /***/ },
 
-/***/ 5481
+/***/ 9246
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -5305,20 +5305,20 @@ function fetchWithAgentSelection(resource, options = {}) {
 
 /***/ },
 
-/***/ 440
+/***/ 4239
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   k: () => (/* reexport safe */ ws__WEBPACK_IMPORTED_MODULE_0__.kb)
 /* harmony export */ });
-/* harmony import */ var ws__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8701);
+/* harmony import */ var ws__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(450);
 
 
 
 
 /***/ },
 
-/***/ 5152
+/***/ 1843
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* unused harmony exports VERSION, atob, atobPolyfill, btoa, btoaPolyfill, btou, decode, encode, encodeURI, encodeURL, extendBuiltins, extendString, extendUint8Array, fromBase64, fromUint8Array, isValid, toBase64, toUint8Array, utob, version */
@@ -5601,12 +5601,12 @@ const gBase64 = {
 
 /***/ },
 
-/***/ 340
+/***/ 9113
 (module, __unused_webpack_exports, __webpack_require__) {
 
 
 
-const { EMPTY_BUFFER } = __webpack_require__(576);
+const { EMPTY_BUFFER } = __webpack_require__(2149);
 
 const FastBuffer = Buffer[Symbol.species];
 
@@ -5739,7 +5739,7 @@ if (!process.env.WS_NO_BUFFER_UTIL) {
 
 /***/ },
 
-/***/ 576
+/***/ 2149
 (module) {
 
 
@@ -5765,12 +5765,12 @@ module.exports = {
 
 /***/ },
 
-/***/ 6763
+/***/ 8548
 (module, __unused_webpack_exports, __webpack_require__) {
 
 
 
-const { kForOnEventAttribute, kListener } = __webpack_require__(576);
+const { kForOnEventAttribute, kListener } = __webpack_require__(2149);
 
 const kCode = Symbol('kCode');
 const kData = Symbol('kData');
@@ -6064,12 +6064,12 @@ function callListener(listener, thisArg, event) {
 
 /***/ },
 
-/***/ 5656
+/***/ 3685
 (module, __unused_webpack_exports, __webpack_require__) {
 
 
 
-const { tokenChars } = __webpack_require__(9346);
+const { tokenChars } = __webpack_require__(3789);
 
 /**
  * Adds an offer to the map of extension offers or a parameter to the map of
@@ -6274,7 +6274,7 @@ module.exports = { format, parse };
 
 /***/ },
 
-/***/ 493
+/***/ 5456
 (module) {
 
 
@@ -6336,16 +6336,16 @@ module.exports = Limiter;
 
 /***/ },
 
-/***/ 6925
+/***/ 6518
 (module, __unused_webpack_exports, __webpack_require__) {
 
 
 
 const zlib = __webpack_require__(3106);
 
-const bufferUtil = __webpack_require__(340);
-const Limiter = __webpack_require__(493);
-const { kStatusCode } = __webpack_require__(576);
+const bufferUtil = __webpack_require__(9113);
+const Limiter = __webpack_require__(5456);
+const { kStatusCode } = __webpack_require__(2149);
 
 const FastBuffer = Buffer[Symbol.species];
 const TRAILER = Buffer.from([0x00, 0x00, 0xff, 0xff]);
@@ -6873,22 +6873,22 @@ function inflateOnError(err) {
 
 /***/ },
 
-/***/ 8548
+/***/ 5151
 (module, __unused_webpack_exports, __webpack_require__) {
 
 
 
 const { Writable } = __webpack_require__(2203);
 
-const PerMessageDeflate = __webpack_require__(6925);
+const PerMessageDeflate = __webpack_require__(6518);
 const {
   BINARY_TYPES,
   EMPTY_BUFFER,
   kStatusCode,
   kWebSocket
-} = __webpack_require__(576);
-const { concat, toArrayBuffer, unmask } = __webpack_require__(340);
-const { isValidStatusCode, isValidUTF8 } = __webpack_require__(9346);
+} = __webpack_require__(2149);
+const { concat, toArrayBuffer, unmask } = __webpack_require__(9113);
+const { isValidStatusCode, isValidUTF8 } = __webpack_require__(3789);
 
 const FastBuffer = Buffer[Symbol.species];
 
@@ -7623,7 +7623,7 @@ module.exports = Receiver;
 
 /***/ },
 
-/***/ 572
+/***/ 2315
 (module, __unused_webpack_exports, __webpack_require__) {
 
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "^Duplex" }] */
@@ -7636,10 +7636,10 @@ const {
   types: { isUint8Array }
 } = __webpack_require__(9023);
 
-const PerMessageDeflate = __webpack_require__(6925);
-const { EMPTY_BUFFER, kWebSocket, NOOP } = __webpack_require__(576);
-const { isBlob, isValidStatusCode } = __webpack_require__(9346);
-const { mask: applyMask, toBuffer } = __webpack_require__(340);
+const PerMessageDeflate = __webpack_require__(6518);
+const { EMPTY_BUFFER, kWebSocket, NOOP } = __webpack_require__(2149);
+const { isBlob, isValidStatusCode } = __webpack_require__(3789);
+const { mask: applyMask, toBuffer } = __webpack_require__(9113);
 
 const kByteLength = Symbol('kByteLength');
 const maskBuffer = Buffer.alloc(4);
@@ -8237,13 +8237,13 @@ function onError(sender, err, cb) {
 
 /***/ },
 
-/***/ 8877
+/***/ 7934
 (module, __unused_webpack_exports, __webpack_require__) {
 
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "^WebSocket$" }] */
 
 
-const WebSocket = __webpack_require__(750);
+const WebSocket = __webpack_require__(1135);
 const { Duplex } = __webpack_require__(2203);
 
 /**
@@ -8405,12 +8405,12 @@ module.exports = createWebSocketStream;
 
 /***/ },
 
-/***/ 1947
+/***/ 7550
 (module, __unused_webpack_exports, __webpack_require__) {
 
 
 
-const { tokenChars } = __webpack_require__(9346);
+const { tokenChars } = __webpack_require__(3789);
 
 /**
  * Parses the `Sec-WebSocket-Protocol` header into a set of subprotocol names.
@@ -8474,14 +8474,14 @@ module.exports = { parse };
 
 /***/ },
 
-/***/ 9346
+/***/ 3789
 (module, __unused_webpack_exports, __webpack_require__) {
 
 
 
 const { isUtf8 } = __webpack_require__(181);
 
-const { hasBlob } = __webpack_require__(576);
+const { hasBlob } = __webpack_require__(2149);
 
 //
 // Allowed token characters:
@@ -8633,7 +8633,7 @@ if (isUtf8) {
 
 /***/ },
 
-/***/ 8824
+/***/ 3915
 (module, __unused_webpack_exports, __webpack_require__) {
 
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "^Duplex$", "caughtErrors": "none" }] */
@@ -8645,11 +8645,11 @@ const http = __webpack_require__(8611);
 const { Duplex } = __webpack_require__(2203);
 const { createHash } = __webpack_require__(6982);
 
-const extension = __webpack_require__(5656);
-const PerMessageDeflate = __webpack_require__(6925);
-const subprotocol = __webpack_require__(1947);
-const WebSocket = __webpack_require__(750);
-const { CLOSE_TIMEOUT, GUID, kWebSocket } = __webpack_require__(576);
+const extension = __webpack_require__(3685);
+const PerMessageDeflate = __webpack_require__(6518);
+const subprotocol = __webpack_require__(7550);
+const WebSocket = __webpack_require__(1135);
+const { CLOSE_TIMEOUT, GUID, kWebSocket } = __webpack_require__(2149);
 
 const keyRegex = /^[+/0-9A-Za-z]{22}==$/;
 
@@ -9202,7 +9202,7 @@ function abortHandshakeOrEmitwsClientError(
 
 /***/ },
 
-/***/ 750
+/***/ 1135
 (module, __unused_webpack_exports, __webpack_require__) {
 
 /* eslint no-unused-vars: ["error", { "varsIgnorePattern": "^Duplex|Readable$", "caughtErrors": "none" }] */
@@ -9218,10 +9218,10 @@ const { randomBytes, createHash } = __webpack_require__(6982);
 const { Duplex, Readable } = __webpack_require__(2203);
 const { URL } = __webpack_require__(7016);
 
-const PerMessageDeflate = __webpack_require__(6925);
-const Receiver = __webpack_require__(8548);
-const Sender = __webpack_require__(572);
-const { isBlob } = __webpack_require__(9346);
+const PerMessageDeflate = __webpack_require__(6518);
+const Receiver = __webpack_require__(5151);
+const Sender = __webpack_require__(2315);
+const { isBlob } = __webpack_require__(3789);
 
 const {
   BINARY_TYPES,
@@ -9233,12 +9233,12 @@ const {
   kStatusCode,
   kWebSocket,
   NOOP
-} = __webpack_require__(576);
+} = __webpack_require__(2149);
 const {
   EventTarget: { addEventListener, removeEventListener }
-} = __webpack_require__(6763);
-const { format, parse } = __webpack_require__(5656);
-const { toBuffer } = __webpack_require__(340);
+} = __webpack_require__(8548);
+const { format, parse } = __webpack_require__(3685);
+const { toBuffer } = __webpack_require__(9113);
 
 const kAborted = Symbol('kAborted');
 const protocolVersions = [8, 13];
@@ -10616,26 +10616,26 @@ function socketOnError() {
 
 /***/ },
 
-/***/ 8701
+/***/ 450
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   kb: () => (/* reexport default from dynamic */ _lib_websocket_js__WEBPACK_IMPORTED_MODULE_6___default.a)
 /* harmony export */ });
 /* unused harmony import specifier */ var WebSocket;
-/* harmony import */ var _lib_stream_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8877);
+/* harmony import */ var _lib_stream_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(7934);
 /* harmony import */ var _lib_stream_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_lib_stream_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _lib_extension_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5656);
-/* harmony import */ var _lib_permessage_deflate_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6925);
+/* harmony import */ var _lib_extension_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(3685);
+/* harmony import */ var _lib_permessage_deflate_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(6518);
 /* harmony import */ var _lib_permessage_deflate_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_lib_permessage_deflate_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _lib_receiver_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(8548);
+/* harmony import */ var _lib_receiver_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(5151);
 /* harmony import */ var _lib_receiver_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_lib_receiver_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _lib_sender_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(572);
+/* harmony import */ var _lib_sender_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(2315);
 /* harmony import */ var _lib_sender_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_lib_sender_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _lib_subprotocol_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(1947);
-/* harmony import */ var _lib_websocket_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(750);
+/* harmony import */ var _lib_subprotocol_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(7550);
+/* harmony import */ var _lib_websocket_js__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(1135);
 /* harmony import */ var _lib_websocket_js__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_lib_websocket_js__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _lib_websocket_server_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(8824);
+/* harmony import */ var _lib_websocket_server_js__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(3915);
 /* harmony import */ var _lib_websocket_server_js__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_lib_websocket_server_js__WEBPACK_IMPORTED_MODULE_7__);
 
 
@@ -10653,7 +10653,7 @@ function socketOnError() {
 
 /***/ },
 
-/***/ 2706
+/***/ 5119
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -11001,7 +11001,7 @@ function sortData(data, sort) {
 
 /***/ },
 
-/***/ 8625
+/***/ 5604
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -11094,10 +11094,10 @@ function dotNotationToObject(data = {}, obj = {}) {
 
 /***/ },
 
-/***/ 1832
+/***/ 9715
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _utilities_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(561);
+/* harmony import */ var _utilities_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5074);
 
 
 function array(method, data) {
@@ -11251,10 +11251,10 @@ function array(method, data) {
 
 /***/ },
 
-/***/ 5052
+/***/ 4493
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _utilities_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(561);
+/* harmony import */ var _utilities_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5074);
 
 
 function database(method, data) {
@@ -11333,13 +11333,13 @@ function database(method, data) {
 
 /***/ },
 
-/***/ 1625
+/***/ 1502
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* unused harmony export send */
-/* harmony import */ var _database_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5052);
-/* harmony import */ var _array_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(1832);
-/* harmony import */ var _object_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(1730);
+/* harmony import */ var _database_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4493);
+/* harmony import */ var _array_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(9715);
+/* harmony import */ var _object_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(2819);
 
 
 
@@ -11362,12 +11362,12 @@ async function send(data) {
 
 /***/ },
 
-/***/ 1730
+/***/ 2819
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
-/* harmony import */ var _cocreate_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(8625);
-/* harmony import */ var _cocreate_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(2706);
-/* harmony import */ var _utilities_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(561);
+/* harmony import */ var _cocreate_utils__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(5604);
+/* harmony import */ var _cocreate_utils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(5119);
+/* harmony import */ var _utilities_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(5074);
 
 
 function object(method, data) {
@@ -11599,7 +11599,7 @@ function object(method, data) {
 
 /***/ },
 
-/***/ 561
+/***/ 5074
 (__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
@@ -11608,7 +11608,7 @@ function object(method, data) {
 /* harmony export */   vd: () => (/* binding */ createData)
 /* harmony export */ });
 /* unused harmony import specifier */ var queryData;
-/* harmony import */ var _libsql_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(4544);
+/* harmony import */ var _libsql_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1035);
 
 
 const organizations = {};
@@ -12086,7 +12086,7 @@ module.exports = __WEBPACK_EXTERNAL_createRequire_require("zlib");
 /******/ 
 /************************************************************************/
 let __webpack_exports__ = {};
-/* harmony import */ var _cocreate_sqlite__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1625);
+/* harmony import */ var _cocreate_sqlite__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1502);
 
 const send = (data) => {
   return _cocreate_sqlite__WEBPACK_IMPORTED_MODULE_0__/* ["default"].send */ .A.send(data);
