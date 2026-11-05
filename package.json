@@ -46,10 +46,10 @@
     "./dist": "./dist/turso.js"
   },
   "devDependencies": {
-    "@cocreate/webpack": "^1.9.0"
+    "@cocreate/webpack": "^2.0.0"
   },
   "dependencies": {
-    "@cocreate/sqlite": "^1.6.0",
-    "@cocreate/utils": "^1.54.0"
+    "@cocreate/sqlite": "^2.0.0",
+    "@cocreate/utils": "^2.0.0"
   }
 }
