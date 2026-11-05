@@ -1,3 +1,10 @@
+## [2.0.1](https://github.com/CoCreateJS/turso/compare/v2.0.0...v2.0.1) (2026-11-05)
+
+
+### Bug Fixes
+
+* upgrade CoCreate dependencies to v2 ([f8ddd41](https://github.com/CoCreateJS/turso/commit/f8ddd41661321794fa6d82c5534a5633abb02c78))
+
 # [2.0.0](https://github.com/CoCreateJS/turso/compare/v1.1.1...v2.0.0) (2026-11-02)
 
 
